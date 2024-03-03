@@ -86,8 +86,8 @@ read -p "Do you want to install Docker? {after installation the system will rebo
 
 case "$choice" in
   yes|Yes|YES)
-    yay -Sy
-    yay -S docker docker-compose --noconfirm
+    sudo apt update
+    sudo apt install -y docker.io docker-compose
     sudo systemctl start docker.service
     sudo systemctl enable --now docker.service
     sudo groupadd docker
@@ -96,7 +96,7 @@ case "$choice" in
     sudo reboot now
     ;;
   no|No|NO)
-    echo "Skipping Java installation."
+    echo "Skipping Docker installation."
     ;;
   *)
     echo "Invalid choice, please enter 'yes' or 'no'."
