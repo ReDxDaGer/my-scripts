@@ -62,10 +62,24 @@ echo "Starship config has been added to your konsole !!"
 
 echo "Now installing Volta and node latest"
 
-# Install node latest using volta
-curl https://get.volta.sh | bash
-source ~/.bashrc
-volta install node
+
+read -p "Do you want to install Node.js using Volta? (yes/no): " choice
+
+# Check the user's choice
+case "$choice" in
+  yes|Yes|YES)
+    echo "Installing Node.js using Volta..."
+    curl https://get.volta.sh | bash
+    source ~/.bashrc
+    volta install node
+    ;;
+  no|No|NO)
+    echo "Skipping Node.js installation."
+    ;;
+  *)
+    echo "Invalid choice, please enter 'yes' or 'no'."
+    ;;
+esac
 
 echo "Now installing SDKMAN and Java version 17.0.9 of microsoft "
 # Install java latest using SDKMAN
