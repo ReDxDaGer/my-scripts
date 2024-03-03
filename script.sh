@@ -65,7 +65,7 @@ echo "Now installing Volta and node latest"
 
 read -p "Do you want to install Node.js using Volta? (yes/no): " choice
 
-# Check the user's choice
+
 case "$choice" in
   yes|Yes|YES)
     echo "Installing Node.js using Volta..."
