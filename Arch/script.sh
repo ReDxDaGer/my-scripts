@@ -118,3 +118,24 @@ bash Miniconda3-latest-Linux-x86_64.sh
 echo "Restart the terminal and paste 'conda config --set auto_activate_base false' to stop conda from activating base"
 
 
+# Installing Docker now :)
+read -p "Do you want to install Docker? {after installation the system will reboot !!!}(yes/no): " choice
+
+case "$choice" in
+  yes|Yes|YES)
+    yay -Sy
+    yay -S docker docker-compose --noconfirm
+    sudo systemctl start docker.service
+    sudo systemctl enable --now docker.service
+    sudo groupadd docker
+    sudo usermod -aG docker $USER
+    newgrp docker
+    sudo reboot now
+    ;;
+  no|No|NO)
+    echo "Skipping Java installation."
+    ;;
+  *)
+    echo "Invalid choice, please enter 'yes' or 'no'."
+    ;;
+esac
