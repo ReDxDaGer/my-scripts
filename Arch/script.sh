@@ -95,7 +95,7 @@ case "$choice" in
   sdk install java 17.0.9-ms
     ;;
   no|No|NO)
-    echo "Skipping Node.js installation."
+    echo "Skipping Java installation."
     ;;
   *)
     echo "Invalid choice, please enter 'yes' or 'no'."
@@ -133,7 +133,7 @@ case "$choice" in
     sudo reboot now
     ;;
   no|No|NO)
-    echo "Skipping Java installation."
+    echo "Skipping Docker installation."
     ;;
   *)
     echo "Invalid choice, please enter 'yes' or 'no'."
