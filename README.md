@@ -7,8 +7,8 @@ This repository contains automation scripts for downloading daily usage tools fo
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/automation-scripts.git
-cd automation-scripts
+git clone https://github.com/yourusername/my-scripts.git
+cd my-scripts
 ```
 ## Arch-based Systems
 For Arch-based systems, run the following script:
