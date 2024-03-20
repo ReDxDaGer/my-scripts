@@ -51,7 +51,7 @@ Installing Rust 🦀
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Install all other package (essential)
-yay -S --noconfirm base-devel brave-bin spotify discord neofetch nano visual-studio-code-bin htop bpytop freshfetch-git ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji fzf kcalc okular tt spicetify-cli
+yay -S --noconfirm base-devel brave-bin zip unzip spotify discord neofetch nano visual-studio-code-bin htop bpytop freshfetch-git ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji fzf kcalc okular tt spicetify-cli
 
 echo "All the packages basically required are installed !!"
 
