@@ -38,7 +38,11 @@ else
   rm -rf yay
 fi
 
-echo "Installing CURL"
+echo "
+
+  Installing CURL
+
+"
 # Install curl
 yay -S --noconfirm curl
 
