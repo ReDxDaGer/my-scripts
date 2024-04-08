@@ -15,16 +15,25 @@ if ! command -v git &> /dev/null; then
   fi
 fi
 
-echo "Installing CURL"
+echo "
+
+  Installing CURL
+
+"
 # Install curl
 sudo apt install -y curl
 
-echo "Installing Rust 🦀"
+echo "
+
+  Installing Rust 🦀
+
+"
+
 # Install rust
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
 
 # Install all other packages (essential)
-sudo apt install -y build-essential brave-browser spotify-client discord neofetch nano code htop fonts-symbola fonts-noto-cjk fonts-noto-color-emoji fzf kcalc okular
+sudo apt install -y neofetch curl python3 python3-pip discord spotify-cli 
 
 echo "All the packages basically required are installed !!"
 
