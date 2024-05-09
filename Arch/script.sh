@@ -129,6 +129,7 @@ case "$choice" in
   yes|Yes|YES)
     yay -Sy
     yay -S docker docker-compose --noconfirm
+    yay -S docker-buildx
     sudo systemctl start docker.service
     sudo systemctl enable --now docker.service
     sudo groupadd docker
