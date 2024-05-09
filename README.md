@@ -31,6 +31,15 @@ For Alpine-based systems, run the following script:
 cd Alpine
 ./alpine_install.sh
 ```
+## For NixOs
+For NixOS , run the following script:
+
+**Copy the packages mentioned below ``config.nix `` and paste in your ``configuration.nix`` and then copy the content of ``.nix_bashrc`` to your ``.bashrc`` and then run the following command :**
+```bash
+  config-nix # to edit the configuration.nix file (mention the packages for installation)
+  build-nix # to build the new NixOS image with new packages that were mentioned in the configuration.nix
+```
+
 ## Requirements
 - Bash
 - Git
