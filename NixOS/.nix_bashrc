@@ -1,0 +1,8 @@
+alias vim="nvim"
+alias list-nix="sudo nix-env --list-generations --profile /nix/var/nix/profiles/system"
+alias delete-nix="sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
+alias ls="eza -al"
+alias config-nix="sudo nvim /etc/nixos/configuration.nix"
+alias build-nix="sudo nixos-rebuild switch"
+eval "$(oh-my-posh init bash --config ~/smoothie.omp.json)"
+nitch
