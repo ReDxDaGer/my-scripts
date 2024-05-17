@@ -5,4 +5,6 @@ alias ls="eza -al"
 alias config-nix="sudo nvim /etc/nixos/configuration.nix"
 alias build-nix="sudo nixos-rebuild switch"
 eval "$(oh-my-posh init bash --config ~/smoothie.omp.json)"
+alias clone="git clone"
+alias add="git add"
 nitch
